@@ -27,7 +27,6 @@ class Originator {
 	
 	getStateFromMemento(memento) {
 		this.state = memento.getState();
-		return this.state;
 	}
 }
 
@@ -36,12 +35,12 @@ class CareTaker {
 		this.memento_list = [];
 	}
 	
-	add(state) {
-		this.memento_list.push(state);
+	add(memento) {
+		this.memento_list.push(memento);
 	}
 	
-	get(index) {
-		return this.memento_list[index];
+	get(memento) {
+		return this.memento_list[memento];
 	}
 }
 
